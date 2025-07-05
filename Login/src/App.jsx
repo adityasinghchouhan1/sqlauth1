@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://sqlauth1.onrender.com',
+  baseURL: process.env.REACT_APP_API_BASE_URL,
 })
 
 function App() {
